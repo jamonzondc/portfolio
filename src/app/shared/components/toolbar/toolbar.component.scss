@@ -1,0 +1,24 @@
+img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.title1 {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    font-size: 1.0em;
+    font-weight: bold;
+    color: #8730fc;
+}
+
+.title1 span {
+    color: #ffca00;
+}

@@ -1,0 +1,26 @@
+<mat-nav-list>
+  <a
+    routerLink="/dashboard"
+    mat-list-item
+    routerLinkActive="active-list-item"
+    (click)="onSelectPage(undefined)"
+  >
+    <mat-icon class="menu-icon">home</mat-icon>Home
+  </a>
+  <ng-container *ngIf="pages">
+    <a
+      *ngFor="let page of pages"
+      routerLink="{{ page.route }}"
+      mat-list-item
+      routerLinkActive="active-list-item"
+      (click)="onSelectPage(page)"
+    >
+      <mat-icon class="menu-icon">{{ page.icon }}</mat-icon
+      >{{ page.title }}
+    </a>
+  </ng-container>
+  <mat-divider></mat-divider>
+  <a mat-list-item type="button" (click)="onLogout()">
+    <mat-icon class="menu-icon">input</mat-icon>Logout
+  </a>
+</mat-nav-list>

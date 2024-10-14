@@ -3,6 +3,36 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@core": [
+        "src/app/core"
+      ],
+      "@core/*": [
+        "src/app/core/*"
+      ],
+      "@private": [
+        "src/app/private"
+      ],
+      "@private/*": [
+        "src/app/private/*"
+      ],
+      "@public": [
+        "src/app/public"
+      ],
+      "@public/*": [
+        "src/app/publics/*"
+      ],
+      "@shared": [
+        "src/app/shared"
+      ],
+      "@shared/*": [
+        "src/app/shared/*"
+      ],
+      "@env/*": [
+        "src/environments/*"
+      ]
+    },
     "outDir": "./dist/out-tsc",
     "strict": true,
     "noImplicitOverride": true,
